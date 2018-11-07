@@ -25,5 +25,5 @@ Route::group(['middleware' => 'locale'], function() {
     Route::post('/posts/create', 'PostController@store')->name('posts.store');
 
     // Chuyển đổi ngôn ngữ cho website
-    Route::get('change-language/{language}', 'HomeController@changeLanguage')->name('user.change-language');
+    Route::get('change-language/{language}', 'LanguageController@changeLanguage')->name('user.change-language');
 });

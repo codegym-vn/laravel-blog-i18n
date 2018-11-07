@@ -12,7 +12,7 @@ abstract class EloquentRepository implements RepositoryInterface
     }
 
     private function setModel(){
-        $this->model = app()->make($this->getMotel());
+        $this->model = app()->make($this->getModel());
     }
 
     public abstract function getModel();
